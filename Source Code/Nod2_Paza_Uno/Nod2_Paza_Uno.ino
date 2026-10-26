@@ -1,3 +1,6 @@
+#include <SPI.h>
+#include <RF24.h>
+
 // Includem doar bibliotecile pentru SPI si antena radio (RF24).
 // Declaram pinii pentru a doua antena si pentru al doilea buzzer.
 

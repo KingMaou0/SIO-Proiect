@@ -1,4 +1,9 @@
 // Biblioteci, include-uri, declarari de pini
+#include <SPI.h>
+#include <MFRC522.h>
+#include <RF24.h>
+#include <LiquidCrystal_I2C.h>
+#include <Servo.h>
 
 void setup() {
   // Serial.begin(9600) 

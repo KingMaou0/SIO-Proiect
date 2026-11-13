@@ -97,7 +97,7 @@ static void nrf_init_rx() {
   nrf_wreg(0x03, 0x03); // SETUP_AW: Adresa 5 octeti
   nrf_wreg(0x04, 0x00); // SETUP_RETR: Retrimiteri DEZACTIVATE
   nrf_wreg(0x05, 108);  // Canal 108 (2508 MHz - liber de Wi-Fi)
-  nrf_wreg(0x06, 0x27); // 250 kbps + putere maxima +7 dBm / LNA gain
+  nrf_wreg(0x06, 0x26); // 250 kbps + putere maxima +7 dBm / LNA gain
   nrf_wreg_buf(0x0A, RF_ADDR, 5); // RX_ADDR_P0: "00001"
   nrf_wreg(0x11, 32);   // Payload 32 octeti
 
@@ -124,7 +124,7 @@ void setup() {
   uint8_t rf  = nrf_rreg(0x06);
   uart_str("CONFIG=0x"); uart_hex(cfg);
   uart_str(" RF_SETUP=0x"); uart_hex(rf);
-  if (cfg == 0x0F && rf == 0x22) uart_ln(" -> SPI & 250kbps OK. Astept pachete...");
+  if (cfg == 0x0F && rf == 0x26) uart_ln(" -> SPI & 250kbps OK. Astept pachete...");
   else uart_ln(" -> EROARE SPI (verifica firele D8, D11, D12, D13)");
 }
 

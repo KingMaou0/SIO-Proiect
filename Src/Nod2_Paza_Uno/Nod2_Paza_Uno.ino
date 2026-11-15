@@ -213,7 +213,7 @@ void loop() {
     nrf_send_ack_echo(raw);
 
     // 2. Proceseaza mesajul primit
-    if (str_eq(msg, "Alex e tare")) {
+    if (str_eq(msg, "Alex te bat cu LCD-ul paralel!")) {
       if (!connected_announced) {
         connected_announced = true;
         uart_ln("[CONECTAT] Handshake confirmat cu Nod 1!\r\n");

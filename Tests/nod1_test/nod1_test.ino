@@ -376,7 +376,7 @@ void setup() {
 
   // Handshake initial silencios ("Alex e tare" nu se afiseaza in Serial Monitor)
   uart_ln("[...] Astept conexiunea cu receptorul (Nod 2)...");
-  nrf_send_reliable("Alex te bat cu lcd-ul ala daca zici ca e I2C cand el e serial", true);
+  nrf_send_reliable("Alex te bat cu lcd-ul ala daca zici ca e I2C cand el e paralel", true);
   uart_ln("[CONECTAT] Legatura radio confirmata cu Nod 2!\r\n");
 
   // Semnal vizual scurt de conectare reusita

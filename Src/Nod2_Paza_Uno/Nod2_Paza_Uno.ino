@@ -289,8 +289,13 @@ void loop(void) {
     /* 1. Trimite imediat pachetul inapoi ca ACK catre Nod 1 */
     nrf_send_ack_echo(raw);
 
+<<<<<<< HEAD
     /* 2. Proceseaza mesajul primit */
     if (str_eq(msg, "Alex e tare")) {
+=======
+    // 2. Proceseaza mesajul primit
+    if (str_eq(msg, "Alex te bat cu LCD-ul paralel!")) {
+>>>>>>> dd2552648ddac8a81758fbe3e323105b83306e43
       if (!connected_announced) {
         connected_announced = true;
         uart_ln("[CONECTAT] Handshake confirmat cu Nod 1!\r\n");

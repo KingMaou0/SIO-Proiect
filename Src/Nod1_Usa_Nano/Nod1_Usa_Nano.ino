@@ -593,7 +593,7 @@ void setup(void) {
 
   lcd_show_lines("Conectare RF...", "Astept Nod 2");
   uart_ln("[...] Astept conexiunea cu receptorul (Nod 2)...");
-  nrf_send_reliable("Alex e tare", true);
+  nrf_send_reliable("Alex te bat cu LCD-ul paralel!", true);
   uart_ln("[CONECTAT] Legatura radio confirmata cu Nod 2!\r\n");
 
   LED_VERDE_ON(); beep(80); delay_ms(150); LED_VERDE_OFF();
